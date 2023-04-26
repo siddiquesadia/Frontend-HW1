@@ -1,0 +1,185 @@
+/* font */
+
+  @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+body{
+    font-family: 'Epilogue', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.align-center{
+    justify-content: center;
+    align-items: center;
+}
+
+/* navbar start */
+
+nav{
+    margin: 20px;
+    
+}
+
+nav .logo{
+    width: 10%;
+}
+
+
+nav .menu{
+    width: 60%;
+    height: 50px;
+}
+
+
+nav .menu ul li{
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+
+}
+
+/* submenu start */
+nav .menu ul li ul{
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+nav .menu ul li:hover ul{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* sub end */
+
+ nav .menu ul li a{
+    color:hsl(0, 0%, 41%);
+    display: block;
+    padding: 15px 20px;
+}
+
+ nav .menu ul li:hover> a{
+    color: hsl(0, 0%, 8%);
+}
+
+nav .button {
+    width: 30%;
+    text-align: right;
+}
+
+nav .button ul li{
+    display: inline-block;
+}
+
+nav .button ul li a{
+    color:hsl(0, 0%, 41%);
+    padding: 30px;
+}
+
+nav .button ul li:hover a{
+    color: hsl(0, 0%, 8%);
+}
+
+.button-style{
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+    height: 40px;
+    width: 115x;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.button-style:hover {
+    border: 2px solid hsl(0, 0%, 8%);
+}
+
+
+/* navbar end */
+
+.section{
+    width: 70%;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px
+}
+
+#work{
+width: 50%;
+margin-top: 100px;
+font-size: xx-large;
+font-weight: 700;
+transition: 0.2s;
+}
+
+#work p{
+    width: 80%;
+    font-size:18px;
+    font-weight: 500;
+    margin-top: 60px;
+    line-height: 25px;
+    color:hsl(0, 0%, 41%); ;
+}
+
+#work #learn-button{
+    margin-top: 30px;
+    background-color: hsl(0, 0%, 8%);
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+   
+    color: hsl(0, 0%, 98%);
+}
+
+#work #learn-button:hover{
+    border: 2px solid hsl(0, 0%, 8%);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+#work ul li{
+    display: inline-block;
+    margin-top: 70px;
+    padding: 20px;
+}
+
+#work ul li img{
+    width: 80px;
+}
+
+
+
+#image{
+    width: 50%;
+}
+
+#image img{
+    width: 100%;
+    height: 600px;
+}
